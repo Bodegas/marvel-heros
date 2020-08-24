@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { searchSuperHero } from "../../services/serviceApiMarvel";
-import "./index.css";
+import { Navbar, Jumbotron, Button } from "react-bootstrap";
 
-function App() {
+function Layout() {
   const [nomes, setNomes] = useState([]);
 
   useEffect(() => {
@@ -15,6 +15,8 @@ function App() {
 
   return (
     <div>
+      <Navbar />
+      <Button>Ola</Button>
       <h1>Listado</h1>
       <ul>
         {nomes.map((nome) => (
@@ -25,4 +27,4 @@ function App() {
   );
 }
 
-export default App;
+export default Layout;
