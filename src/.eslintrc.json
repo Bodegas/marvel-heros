@@ -1,0 +1,7 @@
+{
+  "extends": ["react-app"],
+  "plugins": ["react-hooks", "react", "jsx-a11y", "import"],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error"
+  }
+}
